@@ -1,0 +1,36 @@
+name: Bug Report
+description: >
+  Report undesirable/unexpected behavior in the code.
+title: ""
+labels: "fix/bug"
+assignees:
+  - halosghost
+body:
+  - type: textarea
+    id: branch
+    attributes:
+      label: Affected Branch
+      description: >
+        What branch of the code is affected by the issue?
+      placeholder: e.g., trunk
+    validations:
+      required: true
+  - type: checkboxes
+    id: latest
+    attributes:
+      label: Latest Commit
+      options:
+        - label: >
+            I've pulled the latest changes on the affected bracnch and the
+            issue is still present.
+          required: true
+  - type: textarea
+    id: Description
+    attributes:
+      label: Description
+      description: >
+        Tell us as much about the problem as you can.
+
+        Include tracebacks, error messages, and examples where the issue arises.
+    validations:
+      required: true
