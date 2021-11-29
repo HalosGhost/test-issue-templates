@@ -1,0 +1,48 @@
+name: Bug Report
+description: >
+  Report undesirable/unexpected behavior in the code.
+title: "[A short, descriptive title]"
+labels:
+  - fix/bug
+assignees:
+  - halosghost
+body:
+  - type: input
+    id: branch
+    attributes:
+      label: Affected Branch
+      description: >
+        What branch of the code is affected by the issue?
+      placeholder: trunk
+    validations:
+      required: true
+  - type: checkboxes
+    id: latest
+    attributes:
+      label: Basic Diagnostics
+      options:
+        - label: >
+            I've pulled the latest changes on the affected branch and the
+            issue is still present.
+          required: true
+        - label: >
+            The issue is reproducible in docker
+  - type: textarea
+    id: Description
+    attributes:
+      label: Description
+      description: >
+        Tell us as much about the problem as you can.
+        Include steps-to-reproduce, any relevant errors/logs/tracebacks, as
+        well as links to any related commits/issues/resources that you've found
+        so far.
+
+        cf. [the docs](https://github.com/halosghost/test-issue-templates/tree/trunk/docs/thing.md#section-2)
+      value: |
+        In order to reproduce the issue, follow these steps:
+
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
