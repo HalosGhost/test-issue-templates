@@ -1,0 +1,60 @@
+name: Question
+description: >
+  Submit questions
+  to test.
+title: "[A short, descriptive title]"
+labels:
+  - question
+assignees:
+  - halosghost
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Ask a question
+      placeholder: What are issue templates?
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Benefit
+      description: >
+        Answering a question should provide value. What value is provided by answering this one?
+      placeholder: ex. Answering this question would mean we could understand things better.
+    validations:
+      required: true
+  - type: textarea
+    id: future-options
+    attributes:
+      label: Future Options
+      description: >
+        Ideally, questions are worth asking and answering to inform future decisions and other questions.
+        
+        What new questions (and, therefore, answers) will this allow us to seek?
+    validations:
+      required: false
+  - type: textarea
+    id: challenges
+    attributes:
+      label: Possible Difficulties
+      description: >
+        Answering questions can be difficult.
+        
+        If you can foresee any difficulties to answering this question now, please
+        elaborate on them now; include, if possible, ways we might be able to avoid
+        them.
+    validations:
+      required: false
+  - type: textarea
+    id: previous-askers
+    attributes:
+      label: Previous Askers
+      description: >
+        Usually, questions tend to be asked multiple times (brand new questions are rare); who else has asked this question (or similar questions) before?
+        
+        Where possible, please provide links/references to those questions here.
+    validations:
+      required: false
+
